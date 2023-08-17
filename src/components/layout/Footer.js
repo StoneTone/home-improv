@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Image, Text, Link, Icon } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, Link, Icon, Hide } from "@chakra-ui/react";
 import { ArrowUpIcon } from "@chakra-ui/icons";
 import {
   ad1,
@@ -21,35 +21,45 @@ const Footer = () => {
     <Box bg="gray.800" color="white" py={8}>
       <Flex direction="column" align="center">
         {/* Image fade-in section */}
-        <Box width="100%" overflow="hidden" bg="white">
-          {" "}
-          {/* Wrap the images in a container */}
-          <Flex direction="row" align="center" justify="center">
-            {images.map((image, index) => (
-              <Image
-                key={index}
-                src={image}
-                alt={`Image ${index + 1}`}
-                height="80px"
-                mx={2} // Add spacing between images
-              />
-            ))}
-          </Flex>
-        </Box>
+        <Hide below="md">
+          <Box width="100%" overflow="hidden" bg="white">
+            {" "}
+            {/* Wrap the images in a container */}
+            <Flex direction="row" align="center" justify="center">
+              {images.map((image, index) => (
+                <Image
+                  key={index}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  height="80px"
+                  mx={2} // Add spacing between images
+                />
+              ))}
+            </Flex>
+          </Box>
+        </Hide>
         {/* Copyright and license information */}
         <Box mt={1} textAlign="center">
-          <Text>
+          <Text fontSize={{ base: "xs", md: "sm", lg: "md" }}>
             Copyright ©2023 - Home Improvement Partners, Inc. - All Rights
             Reserved
           </Text>
-          <Text>General Contractor's License #BC636952</Text>
-          <Box mt={1} textAlign="center" p='4'>
+          <Text fontSize={{ base: "2xs", md: "xs", lg: "sm" }}>
+            General Contractor's License #BC636952
+          </Text>
+          <Box mt={1} textAlign="center" p="4">
             <Flex direction="column" align="center" justify="center">
-              <Text fontSize="2xs" fontWeight="bold">
+              <Text
+                fontSize={{ base: "2xs", md: "xs", lg: "sm" }}
+                fontWeight="bold"
+              >
                 Providing home remodeling services throughout the following
                 areas:
               </Text>
-              <Text fontSize="2xs" width="400px">
+              <Text
+                fontSize={{ base: "2xs", md: "xs", lg: "sm" }}
+                width={{ base: "100%", md: "400px", lg: "600px" }}
+              >
                 Anoka, Apple Valley, Andover, Blaine, Bloomington, Brooklyn
                 Center, Brooklyn Park, Burnsville, Champlin, Chanhassen,
                 Columbia Heights, Coon Rapids, Cottage Grove, Crystal, Eagan,
