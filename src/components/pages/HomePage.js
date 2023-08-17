@@ -53,7 +53,7 @@ const HomePage = () => {
       {/* End Quote */}
 
       {/* Basic Container */}
-      <Box p={8} bg="gray.100">
+      <Box p={8} bg="gray.100" marginTop={50}>
         <Box
           display="flex"
           flexDirection={{ base: "column", md: "row" }}
@@ -124,7 +124,7 @@ const HomePage = () => {
         </Box>
       </Box>
 
-      <Box p={8} bg="gray.100">
+      <Box p={8} bg="gray.100" marginTop={50} marginBottom={50}>
         <Text
           textAlign="center"
           fontWeight="bold"
