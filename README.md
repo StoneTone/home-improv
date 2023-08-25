@@ -20,8 +20,8 @@ Welcome to the Home Improvement Contractors website! This is a React application
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/home-improvement-contractors.git`
-2. Navigate to the project directory: `cd home-improvement-contractors`
+1. Clone the repository: `git clone https://github.com/StoneTone/home-improv.git`
+2. Navigate to the project directory: `cd home-improv`
 3. Install dependencies: `npm install`
 
 ## Usage
