@@ -33,13 +33,13 @@ Welcome to the Home Improvement Contractors website! This is a React application
 
 - React
 - Chakra UI
-- Carousel component (add specific carousel library name)
-- Icons library (add specific icons library name)
+- Carousel component 
+- Icons library 
 
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or a pull request in the repository. Please follow the [code of conduct](/CODE_OF_CONDUCT.md) when contributing.
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or a pull request in the repository.
 
 
 ---
